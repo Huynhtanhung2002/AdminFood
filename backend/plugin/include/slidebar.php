@@ -8,15 +8,22 @@
       <li class="nav-item">
         <a href="index.php" class="nav-link active" aria-current="page">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="index.php"></use></svg>
-          Home
+          Sản Phẩm
         </a>
       </li>
-      <li>
-        <a href="#" class="nav-link text-white">
+      
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link text-white dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-          Dashboard
+          Tài Khoản
         </a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="accountDropdown">
+          <li><a class="dropdown-item" href="./page_users.php">Khách Hàng</a></li>
+          <li><a class="dropdown-item" href="#">Nhân Viên</a></li>
+        </ul>
       </li>
+
+     
       <li>
         <a href="#" class="nav-link text-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
@@ -51,3 +58,5 @@
       </ul>
     </div>
   </div>
+
+  

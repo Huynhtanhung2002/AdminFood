@@ -119,6 +119,7 @@ class ServiceAccount
 
     private static function fromJsonFile(string $filePath): self
     {
+        
         try {
             $file = new \SplFileObject($filePath);
             $json = (string) $file->fread($file->getSize());
@@ -133,5 +134,6 @@ class ServiceAccount
         }
 
         return $serviceAccount;
+        
     }
 }
